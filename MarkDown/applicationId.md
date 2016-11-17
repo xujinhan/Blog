@@ -58,6 +58,6 @@ android {
 
 **提示：**如果需要在清单文件（也就是AndroidManifest.xml文件）中引用applicationId，可以在任何清单属性中使用“${applicationId}”占位符，在编译期间，Gradle会将这个标记替换成实际的applicationId。
 
-**重要的一点**
+**重要的一点**  
 packagename仅仅只是文件的一个结构路径，applicationId才是app的唯一标识符，一些第三方要求你填写的packagename，实际上是指应用的唯一标识符（applicationId），这个希望不要搞混了。
 
