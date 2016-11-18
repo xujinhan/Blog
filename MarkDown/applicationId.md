@@ -65,15 +65,15 @@ packagename仅仅只是文件的一个结构路径，applicationId才是app的�
 虽然packagename和Gradle中的applicationId可能会不同，但是再build之后，build工具会将applicationId复制到apk最终生成的manifest文件中。如果我们在build过后，检查我们的最终manifest文件，就会发现，manifest文件的packagename已经改变。  
 *注意：*这里要注意一下，app/src/main目录下的manifest文件，并不是我们这里指的最终生成的manifest。我们所说的最终manifest文件，是指build文件夹下的，也指打包后，反编译出来的manifest文件。
 <br>
-<img src="https://github.com/xujinhan/Blog/blob/master/Image/applicationid_one.png" alt="applicationid" title="applicationid"width="500"/>
+<img src="https://raw.githubusercontent.com/xujinhan/Blog/master/Image/applicationid_one.png" alt="applicationid" title="applicationid"width="500"/>
 <br>
 在这张图片中，我们设置packagename为“com.vickie.laboratory”，设置applicationid为“com.vickie.laboratorys”，为了偷懒，这里只是在后面加了一个s，在看图片的时候需要细心点。
 <br>
-<img src="https://github.com/xujinhan/Blog/blob/master/Image/applicationid_two.png" alt="applicationid" title="applicationid"width="500"/>
+<img src="https://raw.githubusercontent.com/xujinhan/Blog/master/Image/applicationid_two.png" alt="applicationid" title="applicationid"width="500"/>
 <br>
 在第二张图片中，我们可以发现，build之后，右边的manifest中，activity的路径被补全了，在前面添加了package，而上面的package，被替换成了applicationid。
 <br>
-<img src="https://github.com/xujinhan/Blog/blob/master/Image/applicationid_three.png" alt="applicationid" title="applicationid"width="500"/>
+<img src="https://raw.githubusercontent.com/xujinhan/Blog/master/Image/applicationid_three.png" alt="applicationid" title="applicationid"width="1000"/>
 <br>
-第三张图片，是我将工程打包成apk之后，再反编译得出的文件，查看反编译出来的manifest，会发现，其中的activity也是同样路径被补全，package被替换成applicationid。  
+第三张图片，是将工程打包成apk之后，再反编译得出的文件，查看反编译出来的manifest，会发现，其中的activity也是同样路径被补全，package被替换成applicationid。  
 到此位置applicationid就结束了，如果有更多的注意事项，今后会在底部追加。  
