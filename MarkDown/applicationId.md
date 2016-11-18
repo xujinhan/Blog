@@ -76,4 +76,4 @@ packagename仅仅只是文件的一个结构路径，applicationId才是app的�
 <img src="https://raw.githubusercontent.com/xujinhan/Blog/master/Image/applicationid_three.png" alt="applicationid" title="applicationid"width="1000"/>
 <br>
 第三张图片，是将工程打包成apk之后，再反编译得出的文件，查看反编译出来的manifest，会发现，其中的activity也是同样路径被补全，package被替换成applicationid。  
-到此位置applicationid就结束了，如果有更多的注意事项，今后会在底部追加。  
+到此为止applicationid就结束了，如果有更多的注意事项，今后会在底部追加。  
